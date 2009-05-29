@@ -12,7 +12,7 @@ spec = Gem::Specification.new do |s|
   s.test_files = FileList["{test}/**/*test.rb"].to_a
   s.has_rdoc = true
   s.extra_rdoc_files = ["README"]
-  s.add_dependency("dependency", ">= 0.x.x")
+  # s.add_dependency("dependency", ">= 0.x.x")
 end
  
 Rake::GemPackageTask.new(spec) do |pkg| 
