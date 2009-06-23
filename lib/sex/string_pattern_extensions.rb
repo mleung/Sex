@@ -25,7 +25,7 @@ module Sex
 			end
 			
 			def strip_markup!
-        gsub(/<\/?[^>]*>/, "")
+        gsub!(/<\/?[^>]*>/, "")
 			end
 			
 			private
