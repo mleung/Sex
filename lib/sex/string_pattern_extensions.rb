@@ -24,7 +24,7 @@ module Sex
 				scan(/\d+/)
 			end
 			
-			def remove_markup
+			def strip_markup!
         gsub(/<\/?[^>]*>/, "")
 			end
 			

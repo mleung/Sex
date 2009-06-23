@@ -91,10 +91,10 @@ describe Sex::StringPatternExtensions, "number_of_numeric_characters" do
 
 end
 
-describe Sex::StringPatternExtensions, "remove_markup" do
+describe Sex::StringPatternExtensions, "strip_markup!" do
   
   it "should totally remove any markup tags" do
-    "<bold>Text</bold>".remove_markup.should eql("Text")
+    "<bold>Text</bold>".strip_markup!.should eql("Text")
   end
   
 end
