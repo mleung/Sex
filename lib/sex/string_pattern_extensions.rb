@@ -24,6 +24,10 @@ module Sex
 				scan(/\d+/)
 			end
 			
+			def remove_markup
+        gsub(/<\/?[^>]*>/, "")
+			end
+			
 			private
 				def matches?(pattern)
 					!match(pattern).nil?

@@ -90,3 +90,11 @@ describe Sex::StringPatternExtensions, "number_of_numeric_characters" do
 	it "should return the proper amount of numbers"
 
 end
+
+describe Sex::StringPatternExtensions, "remove_markup" do
+  
+  it "should totally remove any markup tags" do
+    "<bold>Text</bold>".remove_markup.should eql("Text")
+  end
+  
+end
